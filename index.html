@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,58 @@
     <title>calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
 
     <div class="calculatorBody">
         <table>
 
             <tr>
-                <td>
+                <td colspan="4" class="result">
                     <input type="text" id="myResult">
                 </td>
-                
+
             </tr>
+
 
             <tr>
                 <td><input type="button" value="C" onclick="remove()"></td>
-                <td><input type="text" value="(" onclick="cal('(')"></td>
-                <td> <input type="text" value=")" onclick="cal( ')' )"></td>
+                <td><input type="button" value="(" onclick="cal('(')"></td>
+                <td> <input type="button" value=")" onclick="cal( ')' )"></td>
+                <td> <input type="button" value=" " onclick="cal( ')' )"></td>
             </tr>
 
 
             <tr>
-                <td><input type="text" value="7" onclick="cal('7')"> </td>
-                <td><input type="text" value="8" onclick="cal('8')"> </td>
-                <td><input type="text" value="9" onclick="cal('9')"> </td>
-                <td><input type="text" value="+" onclick="cal('+')"> </td>
+                <td><input type="button" value="7" onclick="cal('7')"> </td>
+                <td><input type="button" value="8" onclick="cal('8')"> </td>
+                <td><input type="button" value="9" onclick="cal('9')"> </td>
+                <td><input type="button" value="+" onclick="cal('+')"> </td>
             </tr>
 
             <tr>
-                <td><input type="text" value="4" onclick="cal('4')"> </td>
-                <td><input type="text" value="5" onclick="cal('5')"> </td>
-                <td><input type="text" value="6" onclick="cal('6')"> </td>
-                <td><input type="text" value="-" onclick="cal('-')"> </td>
+                <td><input type="button" value="4" onclick="cal('4')"> </td>
+                <td><input type="button" value="5" onclick="cal('5')"> </td>
+                <td><input type="button" value="6" onclick="cal('6')"> </td>
+                <td><input type="button" value="-" onclick="cal('-')"> </td>
             </tr>
 
             <tr>
-                <td><input type="text" value="1" onclick="cal('1')"> </td>
-                <td><input type="text" value="2" onclick="cal('2')"> </td>
-                <td><input type="text" value="3" onclick="cal('3')"> </td>
-                <td><input type="text" value="*" onclick="cal('*')"> </td>
+                <td><input type="button" value="1" onclick="cal('1')"> </td>
+                <td><input type="button" value="2" onclick="cal('2')"> </td>
+                <td><input type="button" value="3" onclick="cal('3')"> </td>
+                <td><input type="button" value="*" onclick="cal('*')"> </td>
             </tr>
 
             <tr>
-                <td><input type="text" value="0" onclick="cal('0')"> </td>
-                <td><input type="text" value="." onclick="cal('.')"> </td>
-                <td><input type="text" value="/" onclick="cal('/')"> </td>
-                <td><input type="text" value="=" onclick="Ans()"> </td>
+                <td><input type="button" value="0" onclick="cal('0')"> </td>
+                <td><input type="button" value="." onclick="cal('.')"> </td>
+                <td><input type="button" value="/" onclick="cal('/')"> </td>
+                <td><input type="button" value="=" onclick="Ans()"> </td>
             </tr>
 
-            
+
 
         </table>
     </div>
@@ -70,4 +74,5 @@
     <!-- link with js -->
     <script src="index.js"></script>
 </body>
+
 </html>
